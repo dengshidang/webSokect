@@ -6,12 +6,12 @@ import me.chanjar.weixin.mp.bean.result.WxMpOAuth2AccessToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import wechatserver.websocketgame.service.AuthorizedLoginBusiness;
+import wechatserver.websocketgame.service.AuthorizedLoginService;
 
 @RestController
 public class DemoAuthTokenController {
     @Autowired
-    private AuthorizedLoginBusiness authorizedLoginBusiness;
+    private AuthorizedLoginService authorizedLoginService;
     @Autowired
    private  WxMpService wxMpService ;
     @RequestMapping("login")
