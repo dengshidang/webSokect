@@ -5,6 +5,10 @@ import javax.servlet.ServletRequestListener;
 import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 请求监听器
+ * 加上自定义请求前处理逻辑。
+ */
 @WebListener
 public class RequestListener implements ServletRequestListener {
 

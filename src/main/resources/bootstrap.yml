@@ -7,20 +7,13 @@ spring :
 
  datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: mahaisong
-    password: Abcd1234
-    url: jdbc:mysql://rm-uf6b22p8gc6v4j87qwo.mysql.rds.aliyuncs.com:3306/foreye1?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username:
+    password:
+    url:
     druid:
       initial-size: 1
       min-idle : 1
       max-active:
       test-on-borrow:
       stat-view-servlet.allow:
-business:
-  config:
-    wechat:
-      mp:
-        appId: ENC(sHyS1+yT69UIRL5OcviTg1l85RZdJr6gibAYQTW7z98=) #wx982b91b8f36011ea  #
-        secret: ENC(xFFsnVU8LvHD1ahvTcQv4DZfLCn5IxBoDHE+xtBxz3CF+sGWG1R9wWh0/bIhpupS) #5d97ad50df8fd220009b3c4e0dc4a414  #
-        token:  ENC(R2HMHy75o00RSlsS0s0j8nAwXt2B1xmT)
-        aesKey: ENC(ej08d1GanlE010+F57nAMsmK0RQWCYyY)
+

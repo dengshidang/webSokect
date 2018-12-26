@@ -3,7 +3,7 @@ import me.chanjar.weixin.mp.api.WxMpConfigStorage;
 import me.chanjar.weixin.mp.api.WxMpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import wechatserver.websocketgame.service.AuthorizedLoginBusiness;
+import wechatserver.websocketgame.service.AuthorizedLoginService;
 
 /**
  * @author dengshidang
@@ -11,7 +11,7 @@ import wechatserver.websocketgame.service.AuthorizedLoginBusiness;
  * @description
  */
 @Service
-public class AuthorizedLoginBusinessImpl implements AuthorizedLoginBusiness {
+public class AuthorizedLoginBusinessImpl implements AuthorizedLoginService {
     private WxMpService wxService;
 
     @Autowired

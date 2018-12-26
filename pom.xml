@@ -11,7 +11,7 @@
     <groupId>wechat-server</groupId>
     <artifactId>websocket-game</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>websocket-game</name>
+    <name>wechat-server</name>
     <description>wechat project for Spring Boot</description>
 
     <properties>
@@ -39,7 +39,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5</version>
+        </dependency>
         <!--微信接口调用工具-->
         <dependency>
         <groupId>com.github.binarywang</groupId>
@@ -74,6 +79,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
